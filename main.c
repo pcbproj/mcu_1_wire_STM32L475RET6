@@ -36,7 +36,7 @@ Purpose : Generic application start
 
 #define BTN_PORT    GPIOB
 #define BTN_PIN     13
-#define BTN_IDR_PIN GPIO_IDR_IDR13
+#define BTN_IDR_PIN GPIO_IDR_ID13
 
 
 #define LOCK_PORT   GPIOB
@@ -62,21 +62,22 @@ Purpose : Generic application start
 
 
 void GPIO_Init(void){
-    RCC->APB2ENR |= RCC_APB2ENR_IOPBEN; // enable LEDS, BTN, LOCK port
+
+    RCC->AHB2ENR |= RCC_AHB2ENR_GPIOBEN; // enable LEDS, BTN, LOCK port
 
     // LEDS pins configurtion
-    LEDS_PORT->CRH &= ~(GPIO_CRH_CNF10);    // output push-pull
-    LEDS_PORT->CRH |= GPIO_CRH_MODE10_0;
+    LEDS_PORT->OTYPER &= ~(GPIO_OTYPER_OT10);    // output push-pull
+    LEDS_PORT->MODER |= GPIO_MODER_MODE10_0;
     LEDS_PORT->BSRR |= GPIO_BSRR_BS10;  
     
-    LEDS_PORT->CRH &= ~(GPIO_CRH_CNF11);    // output push-pull
-    LEDS_PORT->CRH |= GPIO_CRH_MODE11_0;    
+	LEDS_PORT->OTYPER &= ~(GPIO_OTYPER_OT11);    // output push-pull
+    LEDS_PORT->MODER |= GPIO_MODER_MODE11_0;
     LEDS_PORT->BSRR |= GPIO_BSRR_BS11;
 
-    //RCC->APB2ENR |= RCC_APB2ENR_IOPBEN; // enable GPIOB - BTN_PORT enable
-    LOCK_PORT->CRH &= ~(GPIO_CRH_CNF12); // output push-pull
-    LOCK_PORT->CRH |= GPIO_CRH_MODE12_0; // LOCK PIN = PB12 output mode
-    
+    LOCK_PORT->OTYPER &= ~(GPIO_OTYPER_OT12); // output push-pull
+    LOCK_PORT->MODER |= GPIO_MODER_MODE12_0; // LOCK PIN = PB12 output mode
+
+	BTN_PORT->MODER &= ~(BTN_PIN << GPIO_MODER_MODE0);	// input mode for BTN_PIN
     
 }
 

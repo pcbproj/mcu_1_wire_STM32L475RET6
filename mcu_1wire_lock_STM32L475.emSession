@@ -64,11 +64,11 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="118" useTextEdit="1" path="main.c" left="0" selected="1" top="166" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="STM32L4xx/Device/Include/stm32l475xx.h" left="0" top="252" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="11" useTextEdit="1" path="main.c" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="10739" useTextEdit="1" path="STM32L4xx/Device/Include/stm32l475xx.h" left="0" top="10722" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="9" y="91" useTextEdit="1" path="STM32L4xx/Device/Source/system_stm32l4xx.c" left="0" top="74" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="5" y="77" useTextEdit="1" path="STM32L4xx/Device/Include/stm32l4xx.h" left="0" top="72" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="14" useTextEdit="1" path="RCC_init.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="47" y="22" useTextEdit="1" path="RCC_init.c" left="0" top="10" codecName="Default"/>
  </Files>
  <EMStudioWindow activeProject="mcu_1wire_lock_STM32L475" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Work/PCBteach/02_MY_projects/RADIO/mcu_1wire_lock_STM32L475" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

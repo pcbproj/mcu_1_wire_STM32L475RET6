@@ -64,7 +64,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="11" useTextEdit="1" path="main.c" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="11" useTextEdit="1" path="main.c" left="0" selected="1" top="9" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="8" y="10739" useTextEdit="1" path="STM32L4xx/Device/Include/stm32l475xx.h" left="0" top="10722" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="9" y="91" useTextEdit="1" path="STM32L4xx/Device/Source/system_stm32l4xx.c" left="0" top="74" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="5" y="77" useTextEdit="1" path="STM32L4xx/Device/Include/stm32l4xx.h" left="0" top="72" codecName="Default"/>
